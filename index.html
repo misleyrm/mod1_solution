@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "LunchCheck">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
@@ -7,9 +7,10 @@
     <title>Module One Assignment</title>
   </head>
   <body>
-    <div class="container">
-      Enter your items:<input type="text" name="food">
-      <input type="submit" value="Submit">
+    <div class="container" ng-controller = "LunchCheckController">
+      Enter your items:<input type="text" ng-model="items">
+      <span>{{items}}</span>
+      <button type="submit">Enter</button>
     </div>
   </body>
 </html>
